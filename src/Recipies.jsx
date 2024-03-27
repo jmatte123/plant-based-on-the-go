@@ -4,6 +4,55 @@ import { recipies } from './recipies'
 
 export default function Recipies () {
   const [recipiesState, setRecipiesState] = React.useState(recipies)
+  const [filters, setFilters] = React.useState([])
+  const [allergies, setAllergies] = React.useState([])
+
+  React.useEffect(() => {
+    if (filters.length > 0) {
+      const set = new Set()
+      recipies.forEach((recipe) => {
+        filters.forEach((filter) => {
+          if (recipe.tags.includes(filter)) {
+            set.add(recipe)
+          }
+        })
+      })
+
+      recipies.forEach((recipe) => {
+        allergies.forEach((allergy) => {
+          if (recipe.allergies.includes(allergy)) {
+            set.delete(recipe)
+          }
+        })
+      })
+      setRecipiesState(Array.from(set))
+    } else {
+      const set = new Set([...recipies])
+      console.log(allergies)
+      if (allergies.length > 0) {
+        recipies.forEach((recipe) => {
+          allergies.forEach((allergy) => {
+            if (recipe.allergies.includes(allergy)) {
+              set.delete(recipe)
+            }
+          })
+        })
+      }
+      setRecipiesState(Array.from(set))
+    }
+  }, [filters, allergies])
+
+  function onToolChange (e, name) {
+    const newFilters = [...filters]
+    newFilters.push(name)
+    e.target.checked ? setFilters(newFilters) : setFilters(filters.filter((item) => item !== name))
+  }
+
+  function onAllergyChange (e, name) {
+    const newFilters = [...allergies]
+    newFilters.push(name)
+    e.target.checked ? setAllergies(newFilters) : setAllergies(allergies.filter((item) => item !== name))
+  }
 
   return (
     <div className='flex p-8'>
@@ -12,93 +61,97 @@ export default function Recipies () {
           <h1 className='font-bold text-main text-xl'>Tools</h1>
           <div className='flex flex-col gap-1'>
             <div className='flex gap-2'>
-              <input type="checkbox" name="coffeemaker" />
+              <input type="checkbox" name="coffeemaker" onChange={(e) => onToolChange(e, 'Coffee')} />
               <label htmlFor="coffeemaker">Coffeemaker/kehrig</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="ricemaker" />
-              <label htmlFor="ricemaker">Rice maker</label>
+              <input type="checkbox" name="ricecooker" onChange={(e) => onToolChange(e, 'Rice Cooker')} />
+              <label htmlFor="ricecooker">Rice Cooker</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="minifridge" />
-              <label htmlFor="minifridge">Mini fridge/cooler</label>
+              <input type="checkbox" name="cooler" onChange={(e) => onToolChange(e, 'Cooler')} />
+              <label htmlFor="cooler">Cooler</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="foodprocessor" />
+              <input type="checkbox" name="refrigerator" onChange={(e) => onToolChange(e, 'Refrigerator')} />
+              <label htmlFor="refrigerator">Refrigerator</label>
+            </div>
+            <div className='flex gap-2'>
+              <input type="checkbox" name="foodprocessor" onChange={(e) => onToolChange(e, 'Food Processor')} />
               <label htmlFor="foodprocessor">Food Processor</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="crockpot" />
+              <input type="checkbox" name="crockpot" onChange={(e) => onToolChange(e, 'Crockpot')} />
               <label htmlFor="crockpot">Crockpot</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="blender" />
+              <input type="checkbox" name="blender" onChange={(e) => onToolChange(e, 'Blender')} />
               <label htmlFor="blender">Blender</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="stove" />
+              <input type="checkbox" name="stove" onChange={(e) => onToolChange(e, 'Stove')} />
               <label htmlFor="stove">Stove</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="microwave" />
+              <input type="checkbox" name="microwave" onChange={(e) => onToolChange(e, 'Microwave')} />
               <label htmlFor="microwave">Microwave</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="oven" />
+              <input type="checkbox" name="oven" onChange={(e) => onToolChange(e, 'Oven')} />
               <label htmlFor="oven">Oven</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="campfire" />
+              <input type="checkbox" name="campfire" onChange={(e) => onToolChange(e, 'Campfire')} />
               <label htmlFor="campfire">Campfire</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="nosupplies" />
-              <label htmlFor="nosupplies">No supplies</label>
+              <input type="checkbox" name="nosupplies" onChange={(e) => onToolChange(e, 'No Supplies')} />
+              <label htmlFor="nosupplies">No Supplies</label>
             </div>
           </div>
         </div>
         <div>
-          <h1 className='font-bold text-main text-xl'>Allergies (free)</h1>
+          <h1 className='font-bold text-main text-xl'>Allergies</h1>
           <div className='flex flex-col gap-1'>
             <div className='flex gap-2'>
-              <input type="checkbox" name="milk" />
+              <input type="checkbox" name="milk" onChange={(e) => onAllergyChange(e, 'Milk')} />
               <label htmlFor="milk">Milk</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="eggs" />
+              <input type="checkbox" name="eggs" onChange={(e) => onAllergyChange(e, 'Eggs')} />
               <label htmlFor="eggs">Eggs</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="nuts" />
+              <input type="checkbox" name="nuts" onChange={(e) => onAllergyChange(e, 'Nuts')} />
               <label htmlFor="nuts">Nuts</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="fish" />
+              <input type="checkbox" name="fish" onChange={(e) => onAllergyChange(e, 'Fish')} />
               <label htmlFor="fish">Fish</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="crustaceans" />
+              <input type="checkbox" name="crustaceans" onChange={(e) => onAllergyChange(e, 'Crustaceans')} />
               <label htmlFor="crustaceans">Crustaceans</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="shellfish" />
+              <input type="checkbox" name="shellfish" onChange={(e) => onAllergyChange(e, 'Shellfish')} />
               <label htmlFor="shellfish">Shellfish</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="wheat" />
+              <input type="checkbox" name="wheat" onChange={(e) => onAllergyChange(e, 'Wheat')} />
               <label htmlFor="wheat">Wheat</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="soy" />
+              <input type="checkbox" name="soy" onChange={(e) => onAllergyChange(e, 'Soy')} />
               <label htmlFor="soy">Soy</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="sesame" />
+              <input type="checkbox" name="sesame" onChange={(e) => onAllergyChange(e, 'Sesame')} />
               <label htmlFor="sesame">Sesame</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="gluten" />
-              <label htmlFor="gluten">gluten</label>
+              <input type="checkbox" name="gluten" onChange={(e) => onAllergyChange(e, 'Gluten')} />
+              <label htmlFor="gluten">Gluten</label>
             </div>
           </div>
         </div>
@@ -107,7 +160,7 @@ export default function Recipies () {
         {recipiesState.map((app) => (
           <div
             key={app.name}
-            className="relative group bg-secondary bg-cover bg-center p-5 rounded shadow-md group-hover:opacity-75"
+            className="relative group bg-cover bg-center p-5 rounded shadow-xl group-hover:opacity-75 bg-[#ffffff]"
           >
             <Tile app={app} />
           </div>
