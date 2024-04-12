@@ -8,7 +8,7 @@ export default function Tile ({ app }) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={app.name + ' Link'}
-        className='flex flex-col justify-center items-center gap-6'
+        className='flex flex-col gap-6'
       >
         <div className="flex justify-center rounded-lg w-auto">
           <img
@@ -21,17 +21,17 @@ export default function Tile ({ app }) {
           <h3 className="text-xl">{app.name}</h3>
         </div>
         <ul>
-          {app.ingredients.map((item) => (
+          {app.ingredients?.map((item) => (
             <li key={item} className='list-disc'>{item}</li>
           ))}
         </ul>
         <ul>
-          {app.tags.map((item) => (
+          {app.tags?.map((item) => (
             <li key={item} className='list-disc'>{item}</li>
           ))}
         </ul>
         <ul>
-          {app.allergies.map((item) => (
+          {app.allergies?.map((item) => (
             <li key={item} className='list-disc'>{item}</li>
           ))}
         </ul>
