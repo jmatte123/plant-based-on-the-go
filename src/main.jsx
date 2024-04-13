@@ -7,11 +7,11 @@ import Recipies from './Recipies.jsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/plant-based-on-the-go/',
     element: <App />
   },
   {
-    path: '/recipies',
+    path: '/plant-based-on-the-go/recipies',
     element: <Recipies />
   }
 ])
