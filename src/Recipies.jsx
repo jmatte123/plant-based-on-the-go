@@ -7,12 +7,28 @@ export default function Recipies () {
   const [filters, setFilters] = React.useState([])
   const [allergies, setAllergies] = React.useState([])
 
+  function checkArrayEqual (arr1, arr2) {
+    for (let i = 0; i < arr1.length; i++) {
+      if (!arr2.includes(arr1[i])) {
+        return false
+      }
+    }
+    return true
+  }
+
   React.useEffect(() => {
     if (filters.length > 0) {
       const set = new Set()
+
+      recipies.forEach((recipe) => {
+        if (checkArrayEqual(recipe.tags, filters)) {
+          set.add(recipe)
+        }
+      })
+
       recipies.forEach((recipe) => {
         filters.forEach((filter) => {
-          if (recipe.tags.includes(filter)) {
+          if (recipe.tags.includes(filter) && recipe.tags.filter((tag) => tag !== filter).length === 0) {
             set.add(recipe)
           }
         })
@@ -62,19 +78,15 @@ export default function Recipies () {
           <div className='flex flex-col gap-1'>
             <div className='flex gap-2'>
               <input type="checkbox" name="coffeemaker" onChange={(e) => onToolChange(e, 'Coffee')} />
-              <label htmlFor="coffeemaker">Coffeemaker/kehrig</label>
+              <label htmlFor="coffeemaker">Coffeemaker/Kehrig</label>
             </div>
             <div className='flex gap-2'>
               <input type="checkbox" name="ricecooker" onChange={(e) => onToolChange(e, 'Rice Cooker')} />
               <label htmlFor="ricecooker">Rice Cooker</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="cooler" onChange={(e) => onToolChange(e, 'Cooler')} />
-              <label htmlFor="cooler">Cooler</label>
-            </div>
-            <div className='flex gap-2'>
-              <input type="checkbox" name="refrigerator" onChange={(e) => onToolChange(e, 'Refrigerator')} />
-              <label htmlFor="refrigerator">Refrigerator</label>
+              <input type="checkbox" name="cooler" onChange={(e) => onToolChange(e, 'Cooler/Refrigerator')} />
+              <label htmlFor="cooler">Cooler/Refrigerator</label>
             </div>
             <div className='flex gap-2'>
               <input type="checkbox" name="foodprocessor" onChange={(e) => onToolChange(e, 'Food Processor')} />
@@ -89,8 +101,8 @@ export default function Recipies () {
               <label htmlFor="blender">Blender</label>
             </div>
             <div className='flex gap-2'>
-              <input type="checkbox" name="stove" onChange={(e) => onToolChange(e, 'Stove')} />
-              <label htmlFor="stove">Stove</label>
+              <input type="checkbox" name="stove" onChange={(e) => onToolChange(e, 'Stove/Campfire')} />
+              <label htmlFor="stove">Stove/Campfire</label>
             </div>
             <div className='flex gap-2'>
               <input type="checkbox" name="microwave" onChange={(e) => onToolChange(e, 'Microwave')} />
@@ -99,10 +111,6 @@ export default function Recipies () {
             <div className='flex gap-2'>
               <input type="checkbox" name="oven" onChange={(e) => onToolChange(e, 'Oven')} />
               <label htmlFor="oven">Oven</label>
-            </div>
-            <div className='flex gap-2'>
-              <input type="checkbox" name="campfire" onChange={(e) => onToolChange(e, 'Campfire')} />
-              <label htmlFor="campfire">Campfire</label>
             </div>
             <div className='flex gap-2'>
               <input type="checkbox" name="nosupplies" onChange={(e) => onToolChange(e, 'No Supplies')} />

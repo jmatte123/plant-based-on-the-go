@@ -49,10 +49,8 @@ export const recipies = [
       'hot sauce of choice'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Wheat',
@@ -73,8 +71,7 @@ export const recipies = [
       'coconut oil or other oil for cooking'
     ],
     tags: [
-      'Campfire',
-      'Stove'
+      'Stove/Campfire'
     ],
     allergies: [
       'Wheat',
@@ -98,8 +95,7 @@ export const recipies = [
       '¼ teaspoon ground nutmeg'
     ],
     tags: [
-      'Campfire',
-      'Stove'
+      'Stove/Campfire'
     ],
     allergies: [
     ]
@@ -125,10 +121,8 @@ export const recipies = [
       '½ green pepper'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -150,10 +144,8 @@ export const recipies = [
       'Suggested toppings: coconut flakes, jam, almond or peanut butter, raisins'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -172,9 +164,8 @@ export const recipies = [
       '¼ cup chopped peanuts'
     ],
     tags: [
-      'Refrigerator',
       'Oven',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Nuts'
@@ -202,10 +193,8 @@ export const recipies = [
       '1 teaspoon vegan Worcestershire or soy sauce'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Wheat',
@@ -232,10 +221,8 @@ export const recipies = [
       '4-6 flour tortillas corn or flour'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Wheat',
@@ -267,10 +254,8 @@ export const recipies = [
       '1 (19 fl oz) can black beans'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -290,10 +275,8 @@ export const recipies = [
       'Optional toppings: avocado, cilantro, salsa, limes, red onion, etc.'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -316,10 +299,8 @@ export const recipies = [
       '2 cups tuscan kale'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Nuts'
@@ -338,10 +319,8 @@ export const recipies = [
       '¼ teaspoon red pepper flakes'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Nuts',
@@ -369,10 +348,8 @@ export const recipies = [
       'pinch of saffron'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Wheat',
@@ -390,7 +367,7 @@ export const recipies = [
       '1-3 tbsp unsweetened plant milk'
     ],
     tags: [
-      'microwave'
+      'Microwave'
     ],
     allergies: [
       'None'
@@ -521,10 +498,8 @@ export const recipies = [
       'pepper to taste'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -544,8 +519,7 @@ export const recipies = [
       'Salt and Pepper to taste'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -566,10 +540,8 @@ export const recipies = [
       '½ cup fresh basil chopped or ½ tsp dried basil seasoning'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -595,10 +567,8 @@ export const recipies = [
       'Salt and black pepper to taste'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -624,10 +594,8 @@ export const recipies = [
       'Salt and black pepper to taste'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -652,8 +620,7 @@ export const recipies = [
       'Flour or gluten-free tortilla'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Soy',
@@ -677,10 +644,8 @@ export const recipies = [
       '1 tbsp dried cranberries optional'
     ],
     tags: [
-      'Refrigerator',
-      'Campfire',
-      'Stove',
-      'Cooler'
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Wheat',
@@ -704,8 +669,7 @@ export const recipies = [
       '1 medium tomato'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -729,8 +693,7 @@ export const recipies = [
       '2 tsp pickled relish'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Soy'
@@ -752,8 +715,7 @@ export const recipies = [
       '3 tbsp non dairy chocolate chips (optional)'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -772,8 +734,7 @@ export const recipies = [
       '¼ c red cabbage'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Sesame'
@@ -801,8 +762,7 @@ export const recipies = [
       'Sriracha'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Soy',
@@ -823,8 +783,7 @@ export const recipies = [
       '1 tbsp peanut butter'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Nuts'
@@ -847,8 +806,7 @@ export const recipies = [
       '1 pinch of both salt and black pepper'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Sesame'
@@ -869,8 +827,7 @@ export const recipies = [
       '2 ½ c kale'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Sesame'
@@ -895,9 +852,8 @@ export const recipies = [
       '1 tbsp maple syrup'
     ],
     tags: [
-      'Refrigerator',
       'Blender',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Nuts'
@@ -924,7 +880,7 @@ export const recipies = [
       'Coconut whipped cream'
     ],
     tags: [
-      'Refrigerator',
+      'Cooler/Refrigerator',
       'Blender'
     ],
     allergies: [
@@ -955,8 +911,7 @@ export const recipies = [
       '¼ tsp salt'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
     ]
@@ -975,9 +930,8 @@ export const recipies = [
       '¼ tsp salt'
     ],
     tags: [
-      'Refrigerator',
       'Blender',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Sesame'
@@ -999,7 +953,7 @@ export const recipies = [
       '2 tablespoons dairy free chocolate chips'
     ],
     tags: [
-      'Refrigerator',
+      'Cooler/Refrigerator',
       'Microwave'
     ],
     allergies: [
@@ -1026,8 +980,7 @@ export const recipies = [
       'Tortilla chips for serving'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: []
   },
@@ -1049,8 +1002,7 @@ export const recipies = [
       'For Serving: bread, Dijon or spicy brown mustard, lettuce, sliced tomatoes, sliced onion'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Gluten',
@@ -1074,8 +1026,7 @@ export const recipies = [
       '2 cups cooked brown rice'
     ],
     tags: [
-      'Cooler',
-      'Refrigerator',
+      'Cooler/Refrigerator',
       'Microwave'
     ],
     allergies: []
@@ -1094,8 +1045,7 @@ export const recipies = [
       '½ of an avocado, seeded, peeled, and chopped, or ½ cup purchased guacamole'
     ],
     tags: [
-      'Cooler',
-      'Refrigerator',
+      'Cooler/Refrigerator',
       'Microwave'
     ],
     allergies: []
@@ -1117,8 +1067,7 @@ export const recipies = [
       '*Cook quinoa in microwave, rice cooker, instapot, stovetop, or buy pre-cooked package*'
     ],
     tags: [
-      'Cooler',
-      'Refrigerator',
+      'Cooler/Refrigerator',
       'Microwave'
     ],
     allergies: []
@@ -1176,8 +1125,7 @@ export const recipies = [
       'Other toppings could include other berries such a raspberries or blueberries or nuts such as almonds and walnuts'
     ],
     tags: [
-      'Refrigerator',
-      'Cooler'
+      'Cooler/Refrigerator'
     ],
     allergies: [
       'Gluten',
