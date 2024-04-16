@@ -25,7 +25,7 @@ export default function Tile ({ app }) {
             <li key={item} className='list-disc'>{item}</li>
           ))}
         </ul>
-        <ul>
+        {/* <ul>
           {app.tags?.map((item) => (
             <li key={item} className='list-disc'>{item}</li>
           ))}
@@ -34,7 +34,7 @@ export default function Tile ({ app }) {
           {app.allergies?.map((item) => (
             <li key={item} className='list-disc'>{item}</li>
           ))}
-        </ul>
+        </ul> */}
       </a>
     </div>
   )

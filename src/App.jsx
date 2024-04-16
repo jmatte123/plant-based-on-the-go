@@ -13,7 +13,7 @@ export default function App () {
           <Link to="">About Us</Link>
           <Link to="">How It Works</Link>
           <Link to="Recipies">Recipies</Link>
-          <Link to="">Demos</Link>
+          <a href="https://youtu.be/WBmgamIXfWI" target='_blank' rel="noreferrer">Demos</a>
           <Link to="">Meal Prepping</Link>
           <Link to="">Contact Us</Link>
         </div>

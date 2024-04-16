@@ -1,36 +1,5 @@
 export const recipies = [
   {
-    name: 'Vegan Fresh Spring Rolls with Peanut Sauce',
-    linkSrc: 'https://www.veganricha.com/vegan-fresh-spring-rolls-with-peanut-sauce/#recipe',
-    imageSrc: 'https://www.freshoffthegrid.com/wp-content/uploads/2015/12/vegan-tofu-scramble-breakfast-burrito-15-1.jpg',
-    ingredients: [
-      '8oz firm Tofu',
-      '2 tbsp Soy or tamari',
-      '½ tsp garlic powder',
-      '¼ ginger powder',
-      '4 oz pad thai noodles',
-      '1 cup carrots',
-      '1 cup zucchini',
-      '1 cup mint or basil',
-      '1 cup cilantro or basil',
-      '8 to 10 rice paper wrappers',
-      '3 tbsp peanut butter',
-      '2 tsp soy/tamari sauce',
-      '1.5 tbsp maple syrup',
-      '2 tsp lime juice',
-      '¼ tsp garlic powder',
-      '3-4 tbsp water'
-    ],
-    tags: [
-      'Microwave'
-    ],
-    allergies: [
-      'Gluten',
-      'Soy',
-      'Peanut'
-    ]
-  },
-  {
     name: 'Tofu Breakfast Burrito',
     linkSrc: 'https://www.freshoffthegrid.com/vegan-tofu-scramble-breakfast-burrito/',
     imageSrc: 'https://www.freshoffthegrid.com/wp-content/uploads/2015/12/vegan-tofu-scramble-breakfast-burrito-15-1.jpg',
@@ -474,6 +443,37 @@ export const recipies = [
     ],
     allergies: [
       'Gluten'
+    ]
+  },
+  {
+    name: 'Vegan Fresh Spring Rolls with Peanut Sauce',
+    linkSrc: 'https://www.veganricha.com/vegan-fresh-spring-rolls-with-peanut-sauce/#recipe',
+    imageSrc: 'https://www.freshoffthegrid.com/wp-content/uploads/2015/12/vegan-tofu-scramble-breakfast-burrito-15-1.jpg',
+    ingredients: [
+      '8oz firm Tofu',
+      '2 tbsp Soy or tamari',
+      '½ tsp garlic powder',
+      '¼ ginger powder',
+      '4 oz pad thai noodles',
+      '1 cup carrots',
+      '1 cup zucchini',
+      '1 cup mint or basil',
+      '1 cup cilantro or basil',
+      '8 to 10 rice paper wrappers',
+      '3 tbsp peanut butter',
+      '2 tsp soy/tamari sauce',
+      '1.5 tbsp maple syrup',
+      '2 tsp lime juice',
+      '¼ tsp garlic powder',
+      '3-4 tbsp water'
+    ],
+    tags: [
+      'Microwave'
+    ],
+    allergies: [
+      'Gluten',
+      'Soy',
+      'Peanut'
     ]
   },
   {
@@ -1130,6 +1130,399 @@ export const recipies = [
     allergies: [
       'Gluten',
       'Soy'
+    ]
+  },
+  {
+    name: 'Chipotle-Watermelon Gazpacho',
+    linkSrc: 'https://www.forksoverknives.com/recipes/vegan-menus-collections/vegan-dorm-room-recipes/',
+    imageSrc: '',
+    ingredients: [
+      '3 cups seedless watermelon chunks',
+      '½ c fresh cilantro leaves',
+      '1 tbsp lime juice',
+      '2 cloves garlic, chopped',
+      '½ tsp ground cumin',
+      '½ tsp chipotle chile powder',
+      '3 c yellow cherry or grape tomatoes, halved',
+      '1 c peeled and sliced cucumber',
+      '¼ c chopped red onion',
+      'Sea salt, to taste',
+      'Freshly ground black pepper, to taste'
+    ],
+    tags: [
+      'Cooler/Refrigerator'
+    ],
+    allergies: [
+    ]
+  },
+  {
+    name: 'White Bean Wraps',
+    linkSrc: 'https://www.forksoverknives.com/recipes/vegan-burgers-wraps/white-bean-wraps-with-pickled-cucumber-and-mint/',
+    imageSrc: '',
+    ingredients: [
+      '1 medium English cucumber, thinly sliced',
+      '½ tsp sea salt',
+      '1 medium red onion, thinly sliced',
+      '⅓ c apple cider vinegar',
+      '2 cloves garlic, thinly sliced',
+      '2 tsp pure maple syrup',
+      '1 can no-salt-added cannellini beans, rinsed and drained',
+      '3 tbsp chopped fresh mint',
+      '4 8-inch whole wheat tortillas',
+      '2 c fresh baby greens'
+    ],
+    tags: [
+      'Cooler/Refrigerator'
+    ],
+    allergies: [
+      'Gluten'
+    ]
+  },
+  {
+    name: 'Cherry Tomato Bruschetta Tartines',
+    linkSrc: 'https://www.forksoverknives.com/recipes/vegan-burgers-wraps/cherry-tomato-bruschetta-tartines/',
+    imageSrc: '',
+    ingredients: [
+      '1 can cannellini beans, rinsed and drained',
+      '1 ½ c chopped, peeled, and seeded cucumber',
+      '½ c sliced scallions',
+      '½ c cherry tomatoes, sliced',
+      '2 tbsp thinly sliced basil',
+      'Sea salt, to taste',
+      'Freshly ground black pepper, to taste',
+      '½ c whole fresh basil leaves',
+      '1 tbsp lemon juice',
+      '1 clove garlic',
+      '4 slices sprouted whole grain bread, lightly toasted'
+    ],
+    tags: [
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
+    ],
+    allergies: [
+      'Gluten',
+      'Wheat'
+    ]
+  },
+  {
+    name: 'Soft Tofu with Black Sesame and Wasabi Sauce',
+    linkSrc: 'https://www.forksoverknives.com/recipes/vegan-snacks-appetizers/soft-tofu-black-sesame-wasabi-sauce/',
+    imageSrc: '',
+    ingredients: [
+      '½ of a 12.3-oz. package silken extra-firm or firm tofu, drained',
+      '2 tsp black sesame paste',
+      '¼ tsp wasabi paste',
+      '¼ tsp tamari',
+      '1 tbsp chopped garlic chives or scallion'
+    ],
+    tags: [
+      'Cooler/Refrigerator'
+    ],
+    allergies: [
+      'Soy'
+    ]
+  },
+  {
+    name: 'Easy Green Lentils',
+    linkSrc: 'https://www.forksoverknives.com/recipes/vegan-soups-stews/super-easy-instant-pot-lentils/',
+    ImageSrc: '',
+    ingredients: [
+      '1 c chopped yellow onion',
+      '1 c chopped celery',
+      '½ c chopped carrot',
+      '3 large cloves garlic, minced',
+      '1 14.5-oz. can diced tomatoes, undrained',
+      '1 c brown or green lentils, rinsed and drained',
+      '¼ c snipped fresh parsley',
+      '1 tsp salt',
+      'Cracked black pepper'
+    ],
+    tags: [
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
+    ],
+    allergies: [
+    ]
+  },
+  {
+    name: 'Microwave Sweet Potato and Kale Chili',
+    linkSrc: 'https://www.forksoverknives.com/recipes/vegan-soups-stews/microwave-sweet-potato-kale-chili/',
+    imageSrc: '',
+    ingredients: [
+      '2 medium sweet potatoes, peeled and cut into ¾-inch cubes',
+      '1 c purchased pico de gallo or salsa',
+      '1 15-oz. can diced tomatoes, undrained',
+      '1 tbsp chili seasoning',
+      '1 tsp garlic powder',
+      '1 15-oz. can white beans, rinsed and drained',
+      '4 c chopped kale',
+      'Sea salt, to taste',
+      '2 c cooked brown rice'
+    ],
+    tags: [
+      'Microwave',
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
+    ],
+    allergies: [
+    ]
+  },
+  {
+    name: 'Microwave Pasta Primavera',
+    linkSrc: 'https://www.forksoverknives.com/recipes/vegan-pasta-noodles/microwave-pasta-primavera/',
+    imageSrc: '',
+    ingredients: [
+      '1 c dry whole wheat penne pasta',
+      '1 c chopped carrots',
+      '2 c ½-inch broccoli florets',
+      '1 c chopped yellow bell pepper',
+      '1 15-oz. can diced tomatoes, undrained',
+      '1 tsp garlic powder',
+      '1 tsp dried Italian seasoning, crushed',
+      'Sea salt, to taste',
+      'Freshly ground black pepper, to taste',
+      '2 tsp slivered almonds or pine nuts'
+    ],
+    tags: [
+      'Microwave',
+      'Stove/Campfire',
+      'Cooler/Refrigerator'
+    ],
+    allergies: [
+      'Gluten',
+      'Wheat'
+    ]
+  },
+  {
+    name: '15-Minute Quinoa Slaw Bowl',
+    linkSrc: 'https://www.forksoverknives.com/recipes/amazing-grains/15-minute-quinoa-slaw-bowl/',
+    imageSrc: '',
+    ingredients: [
+      '1 15-oz. can chickpeas, rinsed and drained',
+      '¼ c lemon juice',
+      '1 tsp garlic powder',
+      'Sea salt, to taste',
+      'Freshly ground black pepper, to taste',
+      '2 ½ c shredded cabbage with carrot',
+      '1 c fresh or frozen green peas',
+      '1 c cooked quinoa',
+      '½ c cherry tomatoes, halved'
+    ],
+    tags: [
+      'Microwave',
+      'Cooler/Refrigerator',
+      'Stove/Campfire'
+    ],
+    allergies: [
+    ]
+  },
+  {
+    name: 'Super-Simple Hummus Veggie Wraps',
+    linkSrc: 'https://www.forksoverknives.com/recipes/vegan-burgers-wraps/super-simple-hummus-veggie-wraps/',
+    imageSrc: '',
+    ingredients: [
+      '4 10-inch whole wheat tortillas',
+      '1 16-oz. container oil-free hummus',
+      '8 romaine lettuce leaves',
+      '1 bell pepper, cut into 3-inch strips',
+      '1 cucumber, cut into 3-inch strips',
+      '1 carrot, cut into 3-inch strips',
+      'Hot sauce (optional)'
+    ],
+    tags: [
+      'Cooler/Refrigerator'
+    ],
+    allergies: [
+    ]
+  },
+  {
+    name: 'Avocado toast',
+    linkSrc: 'https://www.loveandlemons.com/avocado-toast-recipe/',
+    imageSrc:
+ 'https://cdn.loveandlemons.com/wp-content/uploads/2020/01/IMG_23187-2-1-580x691.jpg',
+    ingredients: [
+      '1 ripe avocado',
+      '1 lemon',
+      'salt to taste',
+      '2-4 slices of bread',
+      'any other desired toppings'
+    ],
+    tags: [
+      'Toaster'
+    ],
+    allergies: [
+      'Gluten'
+    ]
+  },
+  {
+    name: 'White Bean Pesto Salad',
+    linkSrc: 'https://frommybowl.com/5-easy-5-ingredient-vegan-meals/',
+    imageSrc:
+'https://frommybowl.com/wp-content/uploads/2021/05/5_Ingredient_Vegan_Meals_FromMyBowl-2-scaled.jpg',
+    ingredients: [
+      '2 15.5 ounce cans white beans',
+      '8 ounces cherry tomatoes',
+      '1/2 english cucumber',
+      '1/2 cup kalamata olives',
+      '2/3 cup store bought vegan pesto'
+    ],
+    tags: [
+      'Cooler/Refrigerator'
+    ],
+    allergies: [
+    ]
+  },
+  {
+    name: 'Coconut Ginger Banana Ice Cream',
+    linkSrc: 'https://simple-veganista.com/banana-coconut-ginger-ice-cream/#tasty-recipes-8754-jump-target',
+    imageSrc:
+'https://simple-veganista.com/wp-content/uploads/2014/07/coconut-ginger-banana-ice-cream.jpg',
+    ingredients: [
+      '3 frozen bananas',
+      '3 tbsp coconut',
+      '2 tbsp maple syrup',
+      '1 tbsp fresh ginger',
+      'splash of unsweetened vanilla non-dairy milk'
+    ],
+    tags: [
+      'Freezer',
+      'Food Processor'
+    ],
+    allergies: [
+      'Coconut'
+    ]
+  },
+  {
+    name: 'Instant Pot Spanish Rice',
+    linkSrc: 'https://www.allisonsklar.com/5-ingredient-instant-pot-red-rice-vegan/',
+    imageSrc: 'https://i0.wp.com/www.allisonsklar.com/wp-content/uploads/2019/05/43357496_256573225034072_2711933688894016202_n.jpg?w=640&ssl=1',
+    ingredients: [
+      '2 tbsp oil',
+      '1 small onion diced',
+      '1 cup short or long grain white rice',
+      '1 cup tomato juice',
+      '1/4 cup water',
+      '1 tbsp chili powder'
+    ],
+    tags: [
+      'Instant pot'
+    ]
+  },
+  {
+    name: 'Vegan Curry Rice',
+    linkSrc: 'https://www.godairyfree.org/recipes/entrees/vegan-curry-rice-vegan-gluten-free-nut-free-soy-free',
+    imageSrc: 'https://www.godairyfree.org/wp-content/uploads/2007/10/leftovers-1.jpg',
+    ingredients: [
+      '1 cup brown rice',
+      '1 cup regular coconut milk',
+      '2 cups water',
+      '1/2 tsp turmeric',
+      '1/4 tsp garlic powder',
+      '1/4 tsp onion powder',
+      '1/2 tsp salt',
+      '1 large broccoli crown',
+      '1 to 2 cups baby carrots',
+      '3/4 cup chickpeas',
+      'ground pepper to taste'
+    ],
+    tags: [
+      'Rice cooker'
+    ],
+    allergies: [
+      'Coconut'
+    ]
+  },
+  {
+    name: 'Microwave Pasta Primavera',
+    linkSrc: 'https://www.forksoverknives.com/recipes/vegan-pasta-noodles/microwave-pasta-primavera/',
+    imageSrc: 'https://www.forksoverknives.com/uploads/Easy-Pasta-Primavera-wordpress.jpg?auto=webp&auto=webp&optimize=high&quality=70&width=367&dpr=1g',
+    ingredients: [
+      '1 cup dry whole wheat penne',
+      '1 cup chopped carrots',
+      '2 cups 1/2 inch broccoli florets',
+      '1 cup chopped bell pepper',
+      '1 15oz can diced tomatoes undrained',
+      '1 tsp garlic powder',
+      '1 tsp dried Italian seasoning, crushed',
+      'salt to taste',
+      'black pepper to taste',
+      '2 tbsp slivered almonds or pine nuts'
+    ],
+    tags: [
+      'Microwave'
+    ],
+    allergies: [
+      'Gluten',
+      'Nuts'
+    ]
+  },
+  {
+    name: 'Microwave Vegan Mac and Nooch',
+    linkSrc: 'https://www.marystestkitchen.com/microwave-vegan-mac-and-nooch-for-one/',
+    imageSrc: 'https://www.marystestkitchen.com/wp-content/uploads/2019/03/vegan-microwave-mac-nooch-birdseye.jpg',
+    ingredients: [
+      '3/4 cup dry macaroni noodles',
+      '1 cup water',
+      'salt to taste',
+      '1 tbsp tahini or 2 tbsp vegan butter',
+      '1 tbsp nutritional yeast',
+      '1/4 cup frozen peas optional',
+      '1 tsp lemon juice',
+      'pepper to taste'
+    ],
+    tags: [
+      'Microwave'
+    ],
+    allergies: [
+      'Gluten',
+      'Sesame'
+    ]
+  },
+  {
+    name: 'Microwave Vegan Ramen',
+    linkSrc: 'https://www.sneakyveg.com/easy-vegan-microwave-ramen/',
+    imageSrc: ' https://www.sneakyveg.com/wp-content/uploads/2018/12/microwave-ramen-SV-3-1536x1024.jpg',
+    ingredients: [
+      '1/2 small white onion',
+      '1 clove garlic',
+      '1 inch piece of ginger',
+      '1 tbsp dried shiitake mushrooms',
+      '1 tbsp soy sauce',
+      '1 tsp red miso paste',
+      '200 grams noodles',
+      '500ml hot vegetable stock'
+    ],
+    tags: [
+      'Microwave'
+    ],
+    allergies: [
+      'Gluten',
+      'Soy'
+    ]
+  },
+  {
+    name: 'Easy peanutty pasta',
+    linkSrc: 'https://blog.memeinge.com/easy-peanutty-pasta/',
+    imageSrc: 'https://blog.memeinge.com/wp-content/uploads/2015/09/Easy-Peanutty-Pasta-5-700x755.jpg',
+    ingredients: [
+      '2 ounces pasta',
+      '1 tbsp peanut butter',
+      '2 tsp tamari or soy sauce',
+      '2 tsp lime juice or rice wine vinegar',
+      '1 tsp sesame oil',
+      'dash red pepper flakes',
+      '2 tbsp water',
+      '2 green onions',
+      '1 cup shelled edamame'
+    ],
+    tags: [
+      'Microwave'
+    ],
+    allergies: [
+      'Gluten',
+      'Soy',
+      'Peanuts',
+      'Sesame'
     ]
   }
 ]
