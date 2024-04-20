@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/plant-based-on-the-go/recipies",
+    path: "/plant-based-on-the-go/recipes",
     element: <Recipes />,
   },
   {

@@ -1,4 +1,4 @@
-export const recipies = [
+export const recipes = [
   {
     name: "Tofu Breakfast Burrito",
     linkSrc:

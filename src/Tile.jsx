@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export default function Tile ({ app }) {
+export default function Tile({ app }) {
   return (
     <div className="w-full h-auto mx-h-36 bg-secondary p-8">
       <a

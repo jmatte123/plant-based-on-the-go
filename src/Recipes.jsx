@@ -1,9 +1,9 @@
 import * as React from "react";
 import Tile from "./Tile";
-import { recipies } from "./recipies";
+import { recipes } from "./recipes";
 
 export default function Recipes() {
-  const [recipiesState, setRecipiesState] = React.useState(recipies);
+  const [recipesState, setRecipesState] = React.useState(recipes);
   const [filters, setFilters] = React.useState([]);
   const [allergies, setAllergies] = React.useState([]);
 
@@ -19,12 +19,12 @@ export default function Recipes() {
   React.useEffect(() => {
     if (filters.length > 0) {
       const set = new Set();
-      recipies.forEach((recipe) => {
+      recipes.forEach((recipe) => {
         if (checkArrayEqual(recipe.tags, filters)) {
           set.add(recipe);
         }
       });
-      recipies.forEach((recipe) => {
+      recipes.forEach((recipe) => {
         filters.forEach((filter) => {
           if (
             recipe.tags.includes(filter) &&
@@ -34,18 +34,18 @@ export default function Recipes() {
           }
         });
       });
-      recipies.forEach((recipe) => {
+      recipes.forEach((recipe) => {
         allergies.forEach((allergy) => {
           if (recipe.allergies.includes(allergy)) {
             set.delete(recipe);
           }
         });
       });
-      setRecipiesState(Array.from(set));
+      setRecipesState(Array.from(set));
     } else {
-      const set = new Set([...recipies]);
+      const set = new Set([...recipes]);
       if (allergies.length > 0) {
-        recipies.forEach((recipe) => {
+        recipes.forEach((recipe) => {
           allergies.forEach((allergy) => {
             if (recipe.allergies.includes(allergy)) {
               set.delete(recipe);
@@ -53,7 +53,7 @@ export default function Recipes() {
           });
         });
       }
-      setRecipiesState(Array.from(set));
+      setRecipesState(Array.from(set));
     }
   }, [filters, allergies]);
 
@@ -248,7 +248,7 @@ export default function Recipes() {
         </div>
       </div>
       <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:gap-x-8 p-10 overflow-auto">
-        {recipiesState.map((app) => (
+        {recipesState.map((app) => (
           <div
             key={app.name}
             className="relative group bg-cover bg-center p-5 rounded shadow-xl group-hover:opacity-75 bg-[#ffffff]"
