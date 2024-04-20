@@ -1215,6 +1215,7 @@ export const recipes = [
       "1 tbsp chili powder",
     ],
     tags: ["Instant pot"],
+    allergies: [],
   },
   {
     name: "Vegan Curry Rice",
