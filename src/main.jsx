@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
-import Recipies from "./Recipies.jsx";
+import Recipes from "./Recipes.jsx";
+import Demos from "./Demos";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/plant-based-on-the-go/recipies",
-    element: <Recipies />,
+    element: <Recipes />,
+  },
+  {
+    path: "/plant-based-on-the-go/demos",
+    element: <Demos />,
   },
 ]);
 

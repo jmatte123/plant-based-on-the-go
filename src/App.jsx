@@ -13,17 +13,9 @@ export default function App() {
           </h1>
         </div>
         <div className="flex gap-10 items-center">
-          <Link to="">About Us</Link>
           <Link to="">How It Works</Link>
-          <Link to="Recipies">Recipies</Link>
-          <a
-            href="https://youtu.be/WBmgamIXfWI"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Demos
-          </a>
-          <Link to="">Meal Prepping</Link>
+          <Link to="Recipes">Recipes</Link>
+          <Link to="Demos">Demos</Link>
           <Link to="">Contact Us</Link>
         </div>
       </div>

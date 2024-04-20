@@ -11,7 +11,7 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": "warn",
     "no-plusplus": "off",
     "no-unused-expressions": "off",
     "import/no-named-as-default": "off"
